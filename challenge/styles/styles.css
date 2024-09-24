@@ -1,0 +1,28 @@
+nav {
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    color: steelblue;
+    font-size: large;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border: 2px slateblue;
+    padding: 2px;
+    box-shadow: 0 0 10px;
+}
+
+p {
+    padding: 10px;
+    color: orangered;
+}
