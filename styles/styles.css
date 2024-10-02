@@ -23,6 +23,21 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
     color: orangered;
+}
+
+aside {
+    width: 2rem;
+    margin: 1rem;
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
