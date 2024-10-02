@@ -37,7 +37,19 @@ aside {
     text-align: center;
 }
 
+
+main {
+    max-width: 840px;
+  }
+
 aside img {
     width: 200px;
     height: auto;
 }
+
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
