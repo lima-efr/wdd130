@@ -18,6 +18,7 @@ nav a {
 h1 {
     color: rgb(5, 57, 100);
     font-size: x-large;
+    text-align: center;
 }
 
 main img {
@@ -32,6 +33,7 @@ main img {
 p {
     padding: 0;
     color: orangered;
+    text-align: center;
 }
 
 aside {
@@ -39,7 +41,7 @@ aside {
     margin: 1rem;
     border: 1px solid #000;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #2e1a1a;
     color: #332a2a;
     text-align: center;
     position: relative;
@@ -57,6 +59,7 @@ main {
 aside img {
     width: 200px;
     height: auto;
+    float: right;
 }
 
 
