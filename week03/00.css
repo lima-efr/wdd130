@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 245px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .image-container:hover .overlay-text {
+    opacity: 1;
+  }

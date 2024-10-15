@@ -1,0 +1,54 @@
+main {
+    display:flex; 
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.center {
+    width: 400px;
+    height: 400px;
+}
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: large
+}
+
+body {
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 14px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
