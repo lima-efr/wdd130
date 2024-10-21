@@ -3,13 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castle</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <h1>Castle</h1>
-    <p>Predjama - Slovenia</p>
-    <p>Changuito</p>
-    
-        
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Trips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label>
+                <input type="checkbox" name="newsletter"> Sign up for our newsletter
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Our Customer Service Team</h2>
+        <div class="gallery">
+            <div class="employee-photo"><img src="employee1.jpg" alt="Employee 1"></div>
+            <div class="employee-photo"><img src="employee2.jpg" alt="Employee 2"></div>
+            <div class="employee-photo"><img src="employee3.jpg" alt="Employee 3"></div>
+            <div class="employee-photo"><img src="employee4.jpg" alt="Employee 4"></div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Address</h2>
+        <div id="map">Map goes here</div>
+    </section>
+
+    <footer>
+        <p>Telephone - Email</p>
+        <div class="social-icons">
+            <a href="#">F</a>
+            <a href="#">G</a>
+            <a href="#">I</a>
+        </div>
+    </footer>
 </body>
 </html>
