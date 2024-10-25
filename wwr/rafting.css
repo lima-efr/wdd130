@@ -7,22 +7,20 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; /* Previne a rolagem horizontal */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 0.5rem;
 }
 
@@ -63,25 +61,39 @@ a:hover {
 .meiuca {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
+  gap: 20px;
+  padding: 20px;
 }
+
+.meiuca p {
+  background-color: var(--secondary-color); /* Cor secundária como fundo */
+  color: white; /* Cor do texto para contraste */
+  padding: 20px; /* Espaçamento dentro das caixas */
+  border-radius: 10px; /* Bordas arredondadas */
+  flex: 1; /* Garante que os blocos fiquem do mesmo tamanho */
+}
+
+.middleimg {
+  margin: 0 20px;
+  max-width: 400px;
+  height: auto;
+}
+
 
 .titulo2 {
   text-align: center;
   font-size: xx-large;
 }
 
-
-
 article {
   position: absolute;
   bottom: 20rem;
-  left: 4rem;
-  background-color: var(--accent1-color);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(88, 129, 87, 0.9); 
   padding: 10px;
   width: 80%;
-
+  text-align: center;
 }
 
 .articleimg {
@@ -96,15 +108,76 @@ article {
 .pictures {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  position: relative;
+  width: 300px; /* Tamanho fixo das imagens */
+  height: 200px; /* Altura fixa */
+  overflow: hidden; /* Garante que nada exceda o contêiner */
 }
 
 .picture {
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Barra preta semi-opaca */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; /* Garante que padding seja contado dentro da largura */
 }
 
 footer {
-  background-color: white;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
+footer p {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.icons img {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  nav ul {
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  .pictures {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
